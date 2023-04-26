@@ -1,7 +1,5 @@
 
 {
-  "post": [
-{
   "assigned_issues": 0,
   "closed_issues": 0,
   "commit": "9d91adbdbde22e91779b91eb40805f598da5b004",
@@ -21,5 +19,4 @@
   "total_issues_score": 0.0,
   "total_score": 5689.9632687568665
 }
-]
-}
+
