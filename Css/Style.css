@@ -45,6 +45,7 @@ body{
      /* align-items: center;  */
     justify-content: space-between;
     padding: 0 20px 0 20px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
 }
 
 .main-summary{
@@ -69,7 +70,7 @@ body{
 .mini-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    gap: 20px;
+    gap: 10px;
     margin: 20px, 0px;
 
 }
@@ -77,7 +78,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 25px;
+    /* padding: 10px; */
     border-radius: 5px;
 }
 .cards:first-child{
@@ -86,15 +87,63 @@ body{
 .cards:nth-child(2){
     background-color: blueviolet;
 }
-.cards:nth-child(3){
-    background-color: blueviolet;
-}
+/* .cards:nth-child(3){
+    background-color: rgb(43, 58, 226);
+} */
 .cards:nth-child(4){
     background-color: blueviolet;
 }
+.inner-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+ }
+
+/* -------------3rd box (ctrlrxp,anomaly------------ */
 #CtrlExp {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    margin: 10px, 0px;
+    gap: 5px;
+    margin: 0px, 0px;
+   
+ }
+.CtrlExp-inner-cards {
+    padding: 10px;
 }
+ 
+.CtrlExp-inner-cards:first-child{
+    background-color: blue;
+    border-radius: 5%;
+}
+.CtrlExp-inner-cards:nth-child(2){
+    background-color: aqua;
+    border-radius: 5%;
+}
+
+
+/* ------------CHarts-------------- */
+.charts{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    
+   
+    }
+
+.charts-cards {
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+    border-radius: 5%;
+}
+
+#Trending{
+  height: 400px;
+  overflow: hidden;
+}
+#Author{
+    height: 400px;
+    overflow: hidden;
+  }
+

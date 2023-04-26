@@ -22,7 +22,9 @@
       <header class="header"></header>
 
       <!-- end Header -->
+      
       <!-- /* -------------Top Summary---------------- */ -->
+
       <section class="Top-summary">
         <div class="main-summary">
           <h3>Summary</h3>
@@ -38,40 +40,62 @@
         <div class="mini-cards">
           <div class="cards">
             <div class="inner-cards">
-              <h1><span class="material-icons-outlined">
-                code
-                </span></h1>
+              <h3>LoC</h3>
+              <span class="material-icons-outlined"> code </span>
             </div>
-            <h1>LoC</h1>
+            <h1>5000</h1>
           </div>
 
           <div class="cards">
             <div class="inner-cards">
-              <h1><span class="material-icons-outlined">
-                file_present
-                </span></h1>
+              <h3>Number of files</h3>
+              <span class="material-icons-outlined"> file_present </span>
             </div>
-            <h1>Number of files</h1>
+            <h1>50</h1>
           </div>
 
-          <div class="cards">
-            <div class="inner-cards">
-              <h3>Control Expressions</h3>
+          <div id="CtrlExp" class="cards">
+            <div class="CtrlExp-inner-cards">
+              <div>
+                <h3>Control Expressions</h3>
+              </div>
+              <h1>Control Expressions</h1>
             </div>
-            <h1>Control Expressions</h1>
-          </div>
 
-          <div class="cards">
-            <div class="inner-cards">
-              <h3>Anomalies</h3>
+            <div class="CtrlExp-inner-cards">
+              <div>
+                <h3>Anomalies</h3>
+              </div>
+              <h1>Anomalies</h1>
             </div>
-            <h1>Anomalies</h1>
           </div>
+        </div>
+        
+        <div class="charts">
+          <div class="charts-cards">
+           <div id="Trending">
+           <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+          <script src="js/linechart.js"></script>
+          </div>        
+        </div>
+
+        <div class="charts">
+          <div class="charts-cards">
+          <div id="Author">
+          <script src="js/Author.js"></script>
+              </div>
+              
+        </div>
       </main>
       <!-- End Main -->
 
       <!-- Javascript -->
-      <script src="js/script.js"></script>
+      
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.39.0/apexcharts.min.js"></script> </script> -->
+      <!-- <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script> -->
+     
+      <!-- <script src="js/script.js"></script> -->
     </div>
+    
   </body>
 </html>

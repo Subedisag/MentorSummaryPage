@@ -1,18 +1,21 @@
-// ____________line chart-------------------//
-import * as echarts from 'echarts';
+var dom = document.getElementById('Trending');
+var myChart = echarts.init(dom, 'dark', {
+  renderer: 'canvas',
+  useDirtyRect: false
+});
+var app = {};
 
-var chartDom = document.getElementById('Trending-chart');
-var myChart = echarts.init(chartDom, 'dark');
 var option;
 
 option = {
   title: {
-    text: 'Stacked Line'
+    text: 'Repo Trend'+ ' Storm' +' CPP'
   },
   tooltip: {
     trigger: 'axis'
   },
   legend: {
+    top: '6%',
     data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
   },
   grid: {
@@ -68,53 +71,9 @@ option = {
   ]
 };
 
-option && myChart.setOption(option);
 
+if (option && typeof option === 'object') {
+  myChart.setOption(option);
+}
 
-
-//--------------------Author graph------------------//
-
-var options = {
-    series: [44, 55, 41, 17, 15],
-    chart: {
-    width: 380,
-    type: 'donut',
-  },
-  plotOptions: {
-    pie: {
-      startAngle: -90,
-      endAngle: 270
-    }
-  },
-  dataLabels: {
-    enabled: false
-  },
-  fill: {
-    type: 'gradient',
-  },
-  legend: {
-    formatter: function(val, opts) {
-      return val + " - " + opts.w.globals.series[opts.seriesIndex]
-    }
-  },
-  title: {
-    text: 'Author Graph'
-  },
-  responsive: [{
-    breakpoint: 480,
-    options: {
-      chart: {
-        width: 200
-      },
-      legend: {
-        position: 'bottom'
-      }
-    }
-  }]
-  };
-
-  var chart = new ApexCharts(document.querySelector("#Author-Graph"), options);
-  chart.render();
-
-
-
+window.addEventListener('resize', myChart.resize);
