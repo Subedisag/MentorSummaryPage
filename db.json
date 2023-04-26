@@ -1,1 +1,21 @@
 
+{
+  "assigned_issues": 0,
+  "closed_issues": 0,
+  "commit": "9d91adbdbde22e91779b91eb40805f598da5b004",
+  "content_files": 108,
+  "content_size": 806542,
+  "date": "2011-09-17",
+  "days_to_prev": 0,
+  "lines_of_code": 26870,
+  "new_issues": 0,
+  "next_commit": "183766284e276e826c16c02c5d328b3ff48fef75",
+  "next_date": "2012-04-16",
+  "number_issues": 0,
+  "prev_commit": "",
+  "prev_date": "",
+  "removed_issues": 0,
+  "reported_issues": 0,
+  "total_issues_score": 0.0,
+  "total_score": 5689.9632687568665
+}
